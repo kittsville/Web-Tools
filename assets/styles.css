@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+main {
+  max-width: 1200px;
+}
+
+footer a {
+  margin: .5rem;
+}
+
+footer a:not(:hover) {
+  color: grey;
+}
