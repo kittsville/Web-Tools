@@ -1,10 +1,6 @@
-# Web App Template
+# Web Tools
 
-The boilerplate for a basic web app
-
-- HTML file linking CSS/JS files
-- Material Design Components (v6)
-- Code of Conduct/MIT License
+A collection of minorly useful text tooling
 
 ## Local setup
 
