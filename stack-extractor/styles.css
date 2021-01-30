@@ -1,0 +1,11 @@
+textarea#log-text, pre {
+  min-height: 100px;
+  min-width: 600px;
+  margin: auto;
+}
+
+pre {
+  margin: 15px 0px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}

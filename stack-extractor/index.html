@@ -3,8 +3,14 @@ title: Stack Extractor
 description: Extracts formatted stack trace from a log message containing JSON
 layout: default
 ---
-
-<label for="log-text">Log text:</label>
-<textarea id="log-text"></textarea>
+<label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <span class="mdc-text-field__resizer">
+    <textarea id="log-text" class="mdc-text-field__input" aria-label="Paste log text"></textarea>
+  </span>
+</label>
 
 <pre id="stack-trace"></pre>
