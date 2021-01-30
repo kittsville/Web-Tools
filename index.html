@@ -1,50 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Stack Extractor</title>
-
-    <meta name="author" content="Kit Maywood">
-    <meta name="description" content="A collection of minorly useful text tooling">
-
-    <meta name="twitter:card" content="summary_large_image"></meta>
-    <meta name="twitter:site" content="@kittsville"></meta>
-    <meta property="og:title" content="Webapp Template" />
-    <meta property="og:description" content="A collection of minorly useful text tooling" />
-    <!-- <meta property="og:image" content="https://example.com/assets/og-image.png" /> -->
-    <!-- <meta property="og:image:width" content="1080" />
-    <meta property="og:image:height" content="565" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://t.sci1.uk/" />
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link href="/assets/material-components-web.min.css" rel="stylesheet">
-
-    <link href="/assets/styles.css" rel="stylesheet">
-
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" href="/favicon.ico"> -->
-  </head>
-  <body class="mdc-typography">
-    <main>
-      <h1 class="mdc-typography mdc-typography--headline1">Stack Extrator</h1>
-
-      <label for="log-text">Log text:</label>
-      <textarea id="log-text"></textarea>
-
-      <pre id="stack-trace"></pre>
-    </main>
-
-    <footer>
-      <a href="/privacy">Privacy Policy</a>
-      <a href="https://github.com/kittsville/webapp-template">Report a Bug</a>
-    </footer>
-
-    <div>
-      <script src="/assets/material-components-web.min.js"></script>
-      <script src="/assets/scripts.js"></script>
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+<ul>
+{% for tool_page in site.pages %}
+  {% if tool_page.path != "index.html" %}
+    <li><a href="{{ tool_page.url }}">{{ tool_page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
