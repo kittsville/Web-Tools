@@ -1,10 +1,18 @@
 ---
 layout: default
 ---
-<ul>
-{% for tool_page in site.pages %}
-  {% if tool_page.path != "index.html" %}
-    <li><a href="{{ tool_page.url }}">{{ tool_page.title }}</a></li>
-  {% endif %}
-{% endfor %}
+<ul class="mdc-list mdc-list--two-line">
+  {% for tool_page in site.pages %}
+    {% if tool_page.path != "index.html" %}
+      <li class="mdc-list-item">
+        <span class="mdc-list-item__ripple"></span>
+        <span class="mdc-list-item__text">
+          <a href="{{ tool_page.url }}">
+            <span class="mdc-list-item__primary-text">{{ tool_page.title }}</span>
+            <span class="mdc-list-item__secondary-text">{{ tool_page.description }}</span>
+          </a>
+        </span>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>

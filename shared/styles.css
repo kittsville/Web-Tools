@@ -10,6 +10,10 @@ main {
   max-width: 1200px;
 }
 
+.mdc-list-item__text a {
+  text-decoration: none;
+}
+
 footer a {
   margin: .5rem;
 }
