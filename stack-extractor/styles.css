@@ -1,7 +1,17 @@
 textarea#log-text, pre {
   min-height: 100px;
   min-width: 600px;
+}
+
+label.mdc-text-field--textarea, pre {
   margin: auto;
+  clear: both;
+  display: block
+}
+
+button {
+  margin: 15px auto;
+  text-align: center;
 }
 
 pre {
