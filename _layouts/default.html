@@ -56,10 +56,10 @@
     <link href="/shared/material-components-web.min.css" rel="stylesheet">
 
     {% if page.title %}
-      <link href="/{{ page.path | remove: page.name }}styles.css" rel="stylesheet">
+      <link href="/{{ page.path | remove: page.name }}styles.css?v={{site.time | date: '%s' }}" rel="stylesheet">
     {% endif %}
 
-    <link href="/shared/styles.css" rel="stylesheet">
+    <link href="/shared/styles.css?v={{site.time | date: '%s' }}" rel="stylesheet">
   </head>
   <body class="mdc-typography">
     <main>
