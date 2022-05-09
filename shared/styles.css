@@ -21,3 +21,14 @@ footer a {
 footer a:not(:hover) {
   color: grey;
 }
+
+.pre-wrapper {
+  position: relative;
+}
+
+.pre-wrapper .copy {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  cursor: pointer;
+}
