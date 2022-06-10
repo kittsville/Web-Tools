@@ -2,6 +2,8 @@
 
 A collection of minorly useful text tooling
 
+While some of these tools already exist online, you equally shouldn't be pasting confidential company data into random online tools. This site saves me relying on every machine I use having tools like [jq](https://stedolan.github.io/jq/) installed.
+
 ## Local setup
 
 1. Fork + clone the project (consider using [GitHub Desktop](https://desktop.github.com/) if you're unfamiliar with git)
