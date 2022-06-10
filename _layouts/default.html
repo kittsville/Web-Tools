@@ -8,9 +8,9 @@
 {% endif %}
 
 {% if page.tagline %}
-  {% assign page_description = page.tagline %}
+  {% assign page_tagline = page.tagline %}
 {% else %}
-  {% assign page_description = site.tagline %}
+  {% assign page_tagline = site.tagline %}
 {% endif %}
 
 {% assign page_url = site.url | append: page.url %}
@@ -21,7 +21,7 @@
     <!-- General Meta Tags -->
     <title>{{ page_title_long }}</title>
     <meta name="author" content="{{ site.author }}">
-    <meta name="description" content="{{ page_description }}">
+    <meta name="description" content="{{ page_tagline }}">
     {% if page.date %}
     	<meta name="DC.date" scheme="W3CDTF" content="{{ page.date | date: '%F' }}">
     {% endif %}
@@ -48,7 +48,7 @@
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:url" content="{{ page_url }}">
-    <meta name="twitter:description" content="{{ page_description }}">
+    <meta name="twitter:description" content="{{ page_tagline }}">
     <meta name="twitter:creator" content="@{{ site.twitter }}">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -66,6 +66,10 @@
       <h1 class="mdc-typography mdc-typography--headline1">{{ page_title }}</h1>
 
       <p>{{ page.tagline }}</p>
+
+      {% if page.description %}
+        <p>{{ page.description }}</p>
+      {% endif %}
 
       {{ content }}
     </main>
