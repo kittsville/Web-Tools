@@ -75,6 +75,9 @@
     </main>
 
     <footer>
+      {% if !page.title %}
+        <a href="/">More Tools</a>
+      {% endif %}
       <a href="https://github.com/kittsville/web-tools">Report a Bug</a>
     </footer>
 
