@@ -32,3 +32,7 @@ footer a:not(:hover) {
   right: .5rem;
   cursor: pointer;
 }
+
+.description {
+  max-width: 800px;
+}
