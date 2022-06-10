@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p>{{ site.description }}</p>
+<p>{{ site.tagline }}</p>
 
 <ul class="mdc-list mdc-list--two-line">
   {% for tool_page in site.pages %}
@@ -12,7 +12,7 @@ layout: default
         <span class="mdc-list-item__text">
           <a href="{{ tool_page.url }}">
             <span class="mdc-list-item__primary-text">{{ tool_page.title }}</span>
-            <span class="mdc-list-item__secondary-text">{{ tool_page.description }}</span>
+            <span class="mdc-list-item__secondary-text">{{ tool_page.tagline }}</span>
           </a>
         </span>
       </li>

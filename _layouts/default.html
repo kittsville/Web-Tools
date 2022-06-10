@@ -7,10 +7,10 @@
   {% assign page_title = site.title %}
 {% endif %}
 
-{% if page.description %}
-  {% assign page_description = page.description %}
+{% if page.tagline %}
+  {% assign page_description = page.tagline %}
 {% else %}
-  {% assign page_description = site.description %}
+  {% assign page_description = site.tagline %}
 {% endif %}
 
 {% assign page_url = site.url | append: page.url %}
@@ -65,7 +65,7 @@
     <main>
       <h1 class="mdc-typography mdc-typography--headline1">{{ page_title }}</h1>
 
-      <p>{{ page.description }}</p>
+      <p>{{ page.tagline }}</p>
 
       {{ content }}
     </main>
