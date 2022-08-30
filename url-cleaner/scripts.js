@@ -14,7 +14,7 @@ textarea.addEventListener('input', e => {
   document.getElementById('output-text').textContent = cleanUrl(e.target.value);
 });
 
-const exampleInput = 'https://www.amazon.co.uk/gp/product/B01MR2WKY6/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1';
+const exampleInput = 'https://www.etsy.com/uk/listing/596519682/wicker-dog-basket-light-colour-cushion?click_key=df7b2018fd48997fa5651e7bc1ef2e1cf610dc65%3A596519682&click_sum=b9b052cf&ref=user_profile&frs=1';
 
 document.getElementById('see-example').addEventListener('click', () => {
   textarea.value = exampleInput;
