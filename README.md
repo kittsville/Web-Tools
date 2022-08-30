@@ -7,11 +7,9 @@ While some of these tools already exist online, you equally shouldn't be pasting
 ## Local setup
 
 1. Fork + clone the project (consider using [GitHub Desktop](https://desktop.github.com/) if you're unfamiliar with git)
-2. Open a terminal in the project directory
-3. Serve the directory as a website using:
-  - `python3 -m http.server` if you have Python installed
-  - `ruby -run -ehttpd . -p8000` if you have Ruby installed
-  - Any of [these other methods](https://gist.github.com/willurd/5720255)
+2. Install [jekyll](https://jekyllrb.com/), an open-source ruby-based static site generator
+3. Open a terminal in the project directory
+4. Run `jekyll serve`, which will automatically build and serve the site
 
 ## Contributing
 
