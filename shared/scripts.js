@@ -18,3 +18,8 @@ Array.from(document.getElementsByTagName('pre')).forEach(preEl => {
     wrapperEl.appendChild(copyEl);
     document.querySelector('main').appendChild(wrapperEl);
 });
+
+navigator.serviceWorker.register('/worker.js').catch(e => {
+    document.body.appendChild( document.createTextNode( e.toString() ) );
+    throw e;
+});

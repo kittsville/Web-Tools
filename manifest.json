@@ -1,0 +1,8 @@
+{
+	"name": "Web-Tools",
+	"short_name": "Web-Tools",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"background_color": "#fff",
+	"description": "Kit's Web-Tools"
+}
