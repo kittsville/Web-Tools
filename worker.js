@@ -80,9 +80,9 @@ const cacheResponse = (req, rsp) => caches.open(cacheName)
     .then(cache => cache.put(req, rsp.clone()))
     .then(() => rsp);
 
-const timed_fetch = (url, timeout) => timeout(fetch(url, {mode: 'cors', credentials: 'omit', cache: "no-cache"}), timeout);
+const timed_fetch = (url, timeout) => with_timeout(fetch(url, {mode: 'cors', credentials: 'omit', cache: "no-cache"}), timeout);
 
-const timeout = (promise, ms) => new Promise((accept, reject) => {
+const with_timeout = (promise, ms) => new Promise((accept, reject) => {
     setTimeout(() => reject(new Error(`timed out after ${ms}ms`)), ms);
     promise.then(accept, reject);
 });
