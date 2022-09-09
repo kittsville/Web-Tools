@@ -4,13 +4,6 @@ const joinerEl = document.getElementById('input-joiner');
 const prefixEl = document.getElementById('input-prefix');
 const suffixEl = document.getElementById('input-suffix');
 
-
-const formatInput = (input, prefix, suffix, joiner) =>
-  input
-    .split('\n')
-    .map(row => `${prefix}${row}${suffix}`)
-    .join(joiner);
-
 const eventHandler = () => {
   const input     = textarea.value;
   const separator = separatorEl.value;
