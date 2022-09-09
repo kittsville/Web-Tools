@@ -6,7 +6,7 @@ layout: default
 
 <ul class="mdc-list mdc-list--two-line">
   {% for tool_page in site.pages %}
-    {% if tool_page.title %}
+    {% if tool_page.dir != '/' %}
       <li class="mdc-list-item">
         <span class="mdc-list-item__ripple"></span>
         <span class="mdc-list-item__text">
