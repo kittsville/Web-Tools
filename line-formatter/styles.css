@@ -1,4 +1,4 @@
-label.mdc-text-field--textarea, pre {
+#input-label, pre {
   margin: auto;
   clear: both;
   display: block
@@ -13,4 +13,14 @@ pre {
   margin: 15px 0px;
   border-radius: 4px;
   background-color: #f6f6f6;
+}
+
+#customisation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+}
+
+#customisation label {
+  width: 100%;
 }
