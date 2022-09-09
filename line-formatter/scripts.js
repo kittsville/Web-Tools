@@ -13,7 +13,7 @@ const eventHandler = () => {
 
   document.getElementById('output-text').textContent = input
     .split('\n')
-    .map(row => `${prefix}${row}${suffix}`)
+    .map(row => `${prefix}${row.trim()}${suffix}`)
     .join(joiner);
 };
 
