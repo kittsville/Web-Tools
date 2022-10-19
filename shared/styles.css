@@ -11,7 +11,7 @@ main {
   max-width: 1200px;
 }
 
-.mdc-list-item__text a {
+.mdc-list a {
   text-decoration: none;
 }
 

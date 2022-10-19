@@ -7,15 +7,15 @@ layout: default
 <ul class="mdc-list mdc-list--two-line">
   {% for tool_page in site.pages %}
     {% if tool_page.dir != '/' %}
-      <li class="mdc-list-item">
-        <span class="mdc-list-item__ripple"></span>
-        <span class="mdc-list-item__text">
-          <a href="{{ tool_page.url }}">
+      <a href="{{ tool_page.url }}">
+        <li class="mdc-list-item">
+          <span class="mdc-list-item__ripple"></span>
+          <span class="mdc-list-item__text">
             <span class="mdc-list-item__primary-text">{{ tool_page.title }}</span>
             <span class="mdc-list-item__secondary-text">{{ tool_page.tagline }}</span>
-          </a>
-        </span>
-      </li>
+          </span>
+        </li>
+      </a>
     {% endif %}
   {% endfor %}
 </ul>
