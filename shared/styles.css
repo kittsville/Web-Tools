@@ -44,9 +44,14 @@ textarea#log-text, pre {
   width: 100%;
 }
 
+#search-wrapper {
+  width: 100%;
+  max-width: 25em;
+}
+
 @media (max-width: 30em){
   h1.mdc-typography.mdc-typography--headline1 {
     font-size: 2.5em;
-	width: 100%;
+	  width: 100%;
   }
 }
