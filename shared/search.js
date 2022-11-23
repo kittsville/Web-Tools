@@ -13,3 +13,5 @@ inputEl.addEventListener('input', ev => {
         tool.hidden = !displayTool;
     });
 });
+
+inputEl.focus();
