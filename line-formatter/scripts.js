@@ -12,7 +12,7 @@ const eventHandler = () => {
   const suffix    = suffixEl.value;
 
   document.getElementById('output-text').textContent = input
-    .split('\n')
+    .split(separator)
     .map(row => `${prefix}${row.trim()}${suffix}`)
     .join(joiner);
 };
