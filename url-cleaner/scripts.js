@@ -227,6 +227,12 @@ const queryParamAllowlist = [
       'www.google.cat'
     ],
     'params': ['q', 'tbm']
+  },
+  {
+    'hosts': [
+      'princecharlescinema.com'
+    ],
+    'params': ['f', 'p', 'e']
   }
 ];
 
