@@ -1,0 +1,25 @@
+---
+title: Train Case converter
+tagline: Makes a string train case
+layout: default
+---
+
+<p>This will only work for a very specific input but it's easier to automate than do manually so you must suffer my JavaScript</p>
+
+<button id="see-example" class="mdc-button mdc-button--raised" type="button">
+  <div class="mdc-button__ripple" aria-hidden="true"></div>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">visibility</i>
+  <span class="mdc-button__label">Show Example</span>
+</button>
+
+<label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <span class="mdc-text-field__resizer">
+    <textarea id="input-text" class="mdc-text-field__input" aria-label="Paste input"></textarea>
+  </span>
+</label>
+
+<pre id="output-text"></pre>

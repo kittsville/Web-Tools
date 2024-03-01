@@ -1,0 +1,16 @@
+label.mdc-text-field--textarea, pre {
+  margin: auto;
+  clear: both;
+  display: block
+}
+
+button {
+  margin: 15px auto;
+  text-align: center;
+}
+
+pre {
+  margin: 15px 0px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}
