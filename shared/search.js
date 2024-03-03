@@ -1,5 +1,16 @@
+const formEl = document.getElementById('search-form');
 const inputEl = document.getElementById('search');
 const tools = Array.from(document.getElementById('tools').children);
+
+formEl.addEventListener('submit', ev => {
+    ev.preventDefault();
+    
+    const visibleMenuItems = document.querySelectorAll("#tools > a:not([hidden])");
+
+    if (visibleMenuItems.length === 1) {
+        window.location.href = visibleMenuItems[0].getAttribute("href");
+    }
+})
 
 inputEl.addEventListener('input', ev => {
     const searchQuery = ev.target.value.trim().toLowerCase();

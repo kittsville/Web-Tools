@@ -4,12 +4,14 @@ layout: default
 
 <p>{{ site.tagline }}</p>
 
-<div id="search-wrapper" class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--filled">
-  <i class="material-icons mdc-text-field__icon" aria-hidden="true">search</i>
-  <input type="text" id="search" class="mdc-text-field__input">
-  <label class="mdc-floating-label" for="search">Search for tool</label>
-  <div class="mdc-line-ripple"></div>
-</div>
+<form id="search-form">
+  <div id="search-wrapper" class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--filled">
+    <i class="material-icons mdc-text-field__icon" aria-hidden="true">search</i>
+    <input type="text" id="search" class="mdc-text-field__input">
+    <label class="mdc-floating-label" for="search">Search for tool</label>
+    <div class="mdc-line-ripple"></div>
+  </div>
+</form>
 
 <script src="/shared/search.js?v={{site.time | date: '%s' }}" defer></script>
 
