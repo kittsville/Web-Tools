@@ -1,0 +1,8 @@
+.mdc-text-field {
+  margin: 0.5rem;
+  width: 7rem;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}

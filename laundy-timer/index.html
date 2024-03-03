@@ -1,0 +1,51 @@
+---
+title: Laundry Timer
+tagline: Calculate when to start laundry load
+description: How many hours to defer the laundry starting so that it finishes shortly after I wake up. Ensures maximum drying time during the day without festering in the machine once finished
+layout: default
+---
+
+<label class="mdc-text-field mdc-text-field--outlined">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__notch">
+      <span class="mdc-floating-label" id="start-time-label-id">Start</span>
+    </span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <input id="start-time" type="time" class="mdc-text-field__input" aria-labelledby="start-time-label-id">
+</label>
+
+<label class="mdc-text-field mdc-text-field--outlined">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__notch">
+      <span class="mdc-floating-label" id="end-time-label-id">Finish At</span>
+    </span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <input id="end-time" type="time" class="mdc-text-field__input" aria-labelledby="end-time-label-id" value="08:15">
+</label>
+
+<label class="mdc-text-field mdc-text-field--outlined">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__notch">
+      <span class="mdc-floating-label" id="runtime-label-id">Runtime</span>
+    </span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <input id="runtime" type="number" class="mdc-text-field__input" aria-labelledby="runtime-label-id" value="90">
+  <span class="mdc-text-field__affix mdc-text-field__affix--suffix">min</span>
+</label>
+
+<label class="mdc-text-field mdc-text-field--outlined">
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__notch">
+      <span class="mdc-floating-label" id="defer-by-hours-label-id">Hours</span>
+    </span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+  <input id="defer-by-hours" type="number" class="mdc-text-field__input" aria-labelledby="defer-by-hours-label-id">
+</label>
