@@ -1,6 +1,6 @@
 # Web Tools
 
-A collection of minorly useful text tooling
+A collection of minorly useful tools
 
 While some of these tools already exist online, you equally shouldn't be pasting confidential company data into random online tools. This site saves me relying on every machine I use having tools like [jq](https://stedolan.github.io/jq/) installed.
 
