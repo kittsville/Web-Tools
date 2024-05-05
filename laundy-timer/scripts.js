@@ -28,7 +28,7 @@ const calculateDeferment = () => {
 const setStartTimeToNow = () => {
   const date = new Date();
 
-  startTimeEl.value = date.toISOString().substring(11 , 16);
+  startTimeEl.value = `${date.getHours()}:${date.getMinutes()}`;
 }
 
 startTimeEl.addEventListener('input', calculateDeferment);
