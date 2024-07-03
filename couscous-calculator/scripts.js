@@ -5,12 +5,12 @@ const ratio = 100 / 125;
 
 waterEl.addEventListener('input', () => {
   const waterQuantity = parseInt(waterEl.value, 10);
-  const lentilQuantity = waterQuantity * ratio;
-  couscousEl.value = Math.round(lentilQuantity);
+  const couscousQuantity = waterQuantity * ratio;
+  couscousEl.value = Math.round(couscousQuantity);
 });
 
 couscousEl.addEventListener('input', () => {
-  const lentilQuantity = parseInt(couscousEl.value, 10);
-  const waterQuantity = lentilQuantity / ratio;
+  const couscousQuantity = parseInt(couscousEl.value, 10);
+  const waterQuantity = couscousQuantity / ratio;
   waterEl.value = Math.round(waterQuantity);
 });
