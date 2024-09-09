@@ -1,0 +1,11 @@
+label.mdc-text-field--textarea,
+pre {
+  margin: auto;
+  clear: both;
+  display: block;
+}
+
+button {
+  margin: 15px auto;
+  text-align: center;
+}
