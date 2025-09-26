@@ -11,12 +11,11 @@ Array.from(document.getElementsByTagName('pre')).forEach(preEl => {
     copyEl.title = 'Copy to clipboard';
     copyEl.addEventListener('click', () => navigator.clipboard.writeText(preEl.textContent));
 
-
     const wrapperEl = document.createElement('div');
     wrapperEl.classList.add('pre-wrapper');
-    wrapperEl.appendChild(preEl);
     wrapperEl.appendChild(copyEl);
-    document.querySelector('main').appendChild(wrapperEl);
+    preEl.after(wrapperEl);
+    wrapperEl.appendChild(preEl);
 });
 
 navigator.serviceWorker.register('/worker.js').catch(e => {
