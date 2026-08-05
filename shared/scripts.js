@@ -9,7 +9,13 @@ Array.from(document.getElementsByTagName('pre')).forEach(preEl => {
     copyEl.classList.add('material-icons', 'copy');
     copyEl.textContent = 'content_copy';
     copyEl.title = 'Copy to clipboard';
-    copyEl.addEventListener('click', () => navigator.clipboard.writeText(preEl.textContent));
+    copyEl.addEventListener('click', () => {
+        navigator.clipboard.writeText(preEl.textContent).then(() => {
+            copyEl.classList.remove('is-copied');
+            void copyEl.offsetWidth;
+            copyEl.classList.add('is-copied');
+        });
+    });
 
     const wrapperEl = document.createElement('div');
     wrapperEl.classList.add('pre-wrapper');
