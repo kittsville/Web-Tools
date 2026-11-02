@@ -15,6 +15,10 @@ main {
   text-decoration: none;
 }
 
+#tools a.is-selected .mdc-list-item {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 footer {
   margin-top: 1rem;
 }
