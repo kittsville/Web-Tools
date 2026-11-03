@@ -226,7 +226,7 @@ const queryParamAllowlist = [
       'www.google.co.zw',
       'www.google.cat'
     ],
-    'params': ['q', 'tbm']
+    'params': ['q', 'tbm', 'udm']
   },
   {
     'hosts': [
