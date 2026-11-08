@@ -236,5 +236,4 @@ searchInput.addEventListener('input', () => {
 const initialUrl = new URL(location.href).searchParams.get('csv');
 if (initialUrl) {
   urlInput.value = initialUrl;
-  fetchCsv(initialUrl);
 }
