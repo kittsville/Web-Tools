@@ -1,0 +1,67 @@
+#fetch-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+#fetch-form .mdc-text-field {
+  flex: 1 1 16rem;
+  width: auto;
+  margin: 0;
+}
+
+#results .mdc-text-field {
+  display: flex;
+  width: 100%;
+  max-width: 25em;
+  margin: 0 0 8px;
+}
+
+#fetch-form button {
+  margin: 0;
+}
+
+.mdc-form-field {
+  margin: 12px 0;
+}
+
+#error {
+  color: #b00020;
+}
+
+#match-count {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mdc-data-table {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mdc-data-table__table-container {
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.mdc-data-table__table {
+  table-layout: auto;
+  width: max-content;
+  white-space: normal;
+}
+
+.mdc-data-table__header-cell,
+.mdc-data-table__cell {
+  height: auto;
+  vertical-align: top;
+  white-space: pre-wrap;
+  max-width: 24rem;
+}
+
+.mdc-data-table__header-cell {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
